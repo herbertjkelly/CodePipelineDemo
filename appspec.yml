@@ -1,5 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: Config/index.html
-    destination: /var/www/html/index.html
+  - source: web/test.js
+    destination: /var/app/web/test.js
+  - source: vonfig/runweb.sh
+    destination: /var/app/scripts/runweb.sh
+hooks:
+   ApplicationStart:
+      - location: scripts/runweb.sh
+        timeout: 180
