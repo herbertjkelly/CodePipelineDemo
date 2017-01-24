@@ -2,4 +2,4 @@ version: 0.0
 os: linux
 files:
   - source: Config/index.html
-    destination: /var/www/index.html
+    destination: /var/www/html/index.html
