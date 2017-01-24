@@ -6,6 +6,9 @@ files:
   - source: scripts/runweb.sh
     destination: /var/app/scripts/runweb.sh
 hooks:
+   BeforeInstall:
+      - location: scripts/install.sh
+        timeout 180
    ApplicationStart:
       - location: scripts/runweb.sh
         timeout: 180
