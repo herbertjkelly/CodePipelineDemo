@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: web/test.js
-    destination: /var/app/web/test.js
+    destination: /var/app/web/
   - source: scripts/runweb.sh
-    destination: /var/app/scripts/runweb.sh
+    destination: /var/app/scripts/
 hooks:
    BeforeInstall:
       - location: scripts/install.sh
