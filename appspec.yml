@@ -3,7 +3,7 @@ os: linux
 files:
   - source: web/test.js
     destination: /var/app/web/test.js
-  - source: vonfig/runweb.sh
+  - source: scripts/runweb.sh
     destination: /var/app/scripts/runweb.sh
 hooks:
    ApplicationStart:
