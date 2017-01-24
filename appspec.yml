@@ -11,4 +11,4 @@ hooks:
         timeout: 180
    ApplicationStart:
       - location: scripts/runweb.sh
-        timeout: 180
+        timeout: 185
