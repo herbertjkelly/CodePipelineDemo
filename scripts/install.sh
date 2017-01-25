@@ -1,5 +1,5 @@
 #/bin/bash
-cd /home/ec2-user
+#cd /home/ec2-user
 wget https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh 
 sh ./install.sh
 . /home/ec2-user/.nvm/nvm.sh

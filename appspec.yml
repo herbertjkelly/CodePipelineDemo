@@ -9,6 +9,7 @@ hooks:
    BeforeInstall:
       - location: scripts/install.sh
         timeout: 180
+        runas: ec2-user
    ApplicationStart:
       - location: scripts/runweb.sh
         timeout: 185
