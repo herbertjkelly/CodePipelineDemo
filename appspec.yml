@@ -13,3 +13,4 @@ hooks:
    ApplicationStart:
       - location: scripts/runweb.sh
         timeout: 185
+        runas: ec2-user
