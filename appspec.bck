@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: web/test.js
+    destination: /var/app/web/
+  - source: scripts/runweb.sh
+    destination: /var/app/scripts/
+hooks:
+   BeforeInstall:
+      - location: scripts/install.sh
+        timeout: 180
+        runas: root
+   ApplicationStart:
+      - location: scripts/runweb.sh
+        timeout: 185
+        runas: root

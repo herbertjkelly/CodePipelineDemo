@@ -1,7 +1,20 @@
-#!/bin/bash
-wget https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh 
-sh ./install.sh
-. ~/.nvm/nvm.sh
-nvm install 4.4.5
+#!/usr/bin/env bash
+set -e
+
+# update instance
+yum -y update
+
+# install general libraries like Java or ImageMagick
+yum -y install default-jre ImageMagick
+
+# add nodejs to yum
+curl --silent --location https://rpm.nodesource.com/setup_4.x | bash -
+yum -y install nodejs #default-jre ImageMagick
+
+# install pm2 module globaly
+npm install -g pm2
+pm2 update
+
+
+ 
 iptables -t nat -A PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
-rm install.sh
