@@ -35,4 +35,4 @@ docClient.query(params, function(err, data) {
 response.write("Movies from 1985\n" + output);
 response.end();
 output="";
- }).listen(8081);
+ }).listen(8080);
