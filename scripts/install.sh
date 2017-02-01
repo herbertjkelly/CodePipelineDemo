@@ -15,6 +15,7 @@ yum -y install nodejs #default-jre ImageMagick
 npm install -g pm2
 pm2 update
 
-
+# install SDK
+npm install aws-sdk
  
 iptables -t nat -A PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
