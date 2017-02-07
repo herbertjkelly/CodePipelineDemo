@@ -8,7 +8,7 @@ AWS.config.update({
 });
 
 var docClient = new AWS.DynamoDB.DocumentClient();
-var output = "Movies from 1985\n";
+var output = "HIT Movies from a Year in history\n";
 var params = {
     TableName : "Movies",
     KeyConditionExpression: "#yr = :yyyy",
@@ -32,7 +32,7 @@ docClient.query(params, function(err, data) {
         });
     }
 });
-response.write("Movies from 1985\n" + output);
+response.write("HIT Movies from a Year in history\n" + output);
 response.end();
 output="";
  }).listen(8080);
