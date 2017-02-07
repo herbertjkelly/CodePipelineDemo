@@ -1,2 +1,2 @@
 # Shoprite_Demo
-Demo Hello World for Shoprite
+Demo app getting info from DynamoDB and displaying with Node.js
