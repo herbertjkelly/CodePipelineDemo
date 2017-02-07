@@ -16,6 +16,6 @@ npm install -g pm2
 pm2 update
 
 # install SDK
-npm install -g aws-sdk
+#npm install -g aws-sdk
  
 iptables -t nat -A PREROUTING -p tcp -m tcp --dport 80 -j REDIRECT --to-ports 8080
