@@ -1,5 +1,6 @@
 //Simple page getting info from Dybamo Table
 //Returns results in text, this is to demo synthetic tests.
+// V1
 var AWS = require("aws-sdk");
 
 AWS.config.update({
