@@ -17,7 +17,7 @@ var params = {
         "#yr": "year"
     },
     ExpressionAttributeValues: {
-        ":yyyy":1985
+        ":yyyy":1984
     }
 };
 
