@@ -1,4 +1,4 @@
-//Simple page getting info from Dybamo Table
+//Simple page getting info from Dynamo Table
 //Returns results in text, this is to demo synthetic tests.
 // V2
 var AWS = require("aws-sdk");
@@ -17,7 +17,7 @@ var params = {
         "#yr": "year"
     },
     ExpressionAttributeValues: {
-        ":yyyy":1984
+        ":yyyy":1985
     }
 };
 
